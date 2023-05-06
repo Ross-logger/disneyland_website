@@ -1,0 +1,18 @@
+#promotion {
+    text-align: center;
+}
+
+.promotion_video {
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+}
+
+.order_button img {
+    width: 80%;
+}
+
+
+#video {
+    max-width: 100%;
+}

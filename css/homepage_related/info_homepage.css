@@ -1,0 +1,20 @@
+#information_list dt {
+    font-size: 1.5rem;
+}
+
+
+.map_of_disneyland {
+    width: 93%;
+    padding-top: 5%;
+}
+
+.order_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.order_button img {
+    width: 80%;
+}

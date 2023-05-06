@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Iusuf Naumov">
+    <meta charset="UTF-8">
+    <meta name="description" content="Homepage for user that contains basic information about HK Disneyland.">
+    <meta name="keywords" content="video,image,location,booking,information">
+    <meta name=“viewport” content="width=device-width">
+    <link rel="stylesheet" href="css/default.css" type="text/css">
+    <link rel="stylesheet" href="css/homepage.css" type="text/css">
+    <title>Homepage</title>
+
+</head>
+
+<body onload="random_pick_promo_text();">
+<header>
+    <div class="company_info">
+        <div id="logo"><img src="images/logo.png" alt="Logo of Disneyland in Hong Kong"></div>
+        <h1 id="website_title">
+            <span>D</span><span>i</span><span>s</span><span>n</span><span>e</span><span>y</span><span>L</span><span>a</span><span>n</span><span>d</span>
+        </h1>
+    </div>
+    <div class="welcome_message">
+        <h2>Welcome!</h2>
+    </div>
+
+</header>
+
+<div class="main_content">
+    <div class="navbar">
+        <div id="information_block">
+            <h1>Information List</h1>
+            <dl id="information_list">
+                <dt id="address">Address</dt>
+                <dd>Hong Kong Disneyland Resort, <br>
+                    Penny's Bay,Lantau Island, <br>
+                    Hong Kong
+                </dd>
+                <dt id="telephone">Telephone</dt>
+                <dd>+852 1-830-830</dd>
+                <dt id="business_hours">Business Hours</dt>
+                <dd> 10:30 AM to 8:30 PM</dd>
+                <dt id="brief_introduction">Brief Introduction</dt>
+                <dd>Enter a magical kingdom inspired by fairy-tale dreams and explore 7 lands - <br>
+                    Adventureland, Grizzly Gulch, Mystic Point, Toy Story Land, Fantasyland, <br>
+                    Tomorrowland and Main Street, USA - filled with beauty, excitement and Disney <br>
+                    Characters.
+                </dd>
+                <dt id="location">Location</dt>
+                <dd><img class="map_of_disneyland " src="images/location.jpg" alt="Map of DisneyLand"></dd>
+            </dl>
+
+            <a class="order_button" href="html/order.html"><img src="images/button.jpg"
+                                                                alt="Order button"></a>
+
+        </div>
+    </div>
+
+    <div class="content">
+        <div>
+            <div class="promotion_information_block">
+                <h2 id="promotion">DISNEY PREMIER ACCESS & 1-DAY TICKET COMBO, STARTING FROM HK $798</h2>
+                <div class="promotion_video">
+                    <video id="video" controls muted onended="switch_video()">
+                        <source id="video_src" src="https://personal.cs.cityu.edu.hk/~cs2204/video/Castle.mp4"
+                                type="video/mp4">
+                        <h2>Your browser does not support the video tag.</h2>
+                    </video>
+                </div>
+            </div>
+            <div id="booking_block">
+                <fieldset>
+                    <legend>
+                        <h2>Booking information:</h2>
+                    </legend>
+                    <form id="booking_form" method="get">
+                        <table class="booking_table">
+                            <tr>
+                                <td class="label">
+                                    <label for="date">Date:</label></td>
+                                <td class="input"><input type="date" id="date" name="fdate"></td>
+                            </tr>
+                            <tr>
+
+                                <td class="label">
+                                    <label for="time">Time:</label>
+                                </td>
+                                <td class="input">
+                                    <select id="time" name="ftimeslots">
+                                        <option value="10:00-12:00">10:00-12:00</option>
+                                        <option value="12:00-14:00">12:00-14:00</option>
+                                        <option value="14:00-16:00">14:00-16:00</option>
+                                        <option value="16:00-18:00">16:00-18:00</option>
+                                        <option value="18:00-20:00">18:00-20:00</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label"><label for="number_of_visitors">No. of Visitors:</label></td>
+                                <td class="input"><input type="number" id="number_of_visitors"
+                                                         name="fnumber_of_visitors"></td>
+                            </tr>
+                        </table>
+                        <div><h3 id="error_message" style="color: red;display: none">Data not completed, please
+                            re-enter</h3></div>
+                        <div class="buttons">
+                            <input id="check" type="submit" value="Check Availability">
+                            <input id="reset" type="reset">
+                        </div>
+                    </form>
+
+
+                </fieldset>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer class="website_footer">
+    <div>
+        <h2 id="copyright">@CityU 2023 – sources of images and text from official website of Hong Kong
+            Disneyland, Wikipedia and Courtesy of Icon pack by Icons8 – designed by
+            <a href="html/design.html">Iusuf.</a>
+        </h2>
+    </div>
+</footer>
+<script src="https://personal.cs.cityu.edu.hk/~cs2204/cs2204cw3.js"></script>
+<script src="javascript/homepage_javascipt.js"></script>
+</body>
+</html>

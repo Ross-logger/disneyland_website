@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Iusuf Naumov">
+    <meta name="description" content="Design page, information about designer">
+    <title>Design</title>
+    <style>
+        h3 {
+            color: red;
+        }
+
+        span, .folder {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+<div id="info_about_designer">
+    <h2 id="name_of_designer">Name: Iusuf Naumov</h2>
+    <h2 id="SID">Student ID: 57552942</h2><br>
+    <h3>m)Positining schemes:</h3>
+    <h4>1)static in 110th line "default.css" and many more.<br>
+        2)relative : 12th line in "homepage.css" and 80th line in "homepage.css" (used to align the borders with
+        header).<br>
+        3)fixed: 32nd line in "order.css" used it for fixing the footer (also used the media query for responsive
+        layout).
+    </h4>
+    <h3>n)CSS3 techniques:</h3>
+    <h4><span>1)Round corner</span>: 21st, 36th lines in "homepage.css".<br>
+        Desc:<br>
+        Made rounded corners for elements/divs (all of them actually rounded).<br>
+        2)<span>Gradient</span>: 19th, 114th lines in "default.css".<br>
+        Desc:<br>
+        Made gradient text in the 19th line and gradient background for "Welcome!" message in 114th line.<br>
+        3)<span>Animation</span>:17th, 123rd, 141st lines in "default.css".<br>
+        Desc:<br>
+        In the 17th line animated "DisneyLand" message so that the letters move like a wave when hovering(also the text
+        color becomes gradient).<br>
+        In the 123rd line animated the "Welcome!" messages background to glow with different colors.<br>
+        In the 141st line animated the DisneyLand logo to rotate for 13 degree when hovering.<br>
+    </h4>
+    <h3>o)How styles are grouped:</h3>
+    <h4>
+        1)I created "default.css" folder and put common header (company logo/name, welcome message styles), footer<br>
+        sections and all common animations, briefly speaking included common styles for webpages.
+    </h4>
+    <h4>
+        2)In "homepage.css" there are general layout, the main sections styles.
+    </h4>
+    <h4 class="folder">
+        In "homepage_related" folder there are styles of different sections/blocks of homepage.css:
+    </h4>
+    <h4>
+        3)In "book_homepage.css" there are things related to booking table.
+    </h4>
+    <h4>
+        4)In "info_homepage.css" there are styles for information block of homepage.
+    </h4>
+    <h4>
+        5)In "promotion_homepage.css" there are styles for promotion block of homepage.
+    </h4>
+    <h4>
+        6)In "order.css" there are general styles for layout of the page.
+    </h4>
+    <h4 class="folder">
+        In "order_related" folder there are styles of different sections/blocks of order.css:
+    </h4>
+    <h4>
+        7)In "menu_order.css" there are styles for menu block of orderpage.
+    </h4>
+    <h4>
+        8)In "printOrder.css" are styles for print media of orderpage.
+    </h4>
+    <h4>
+        9)In "table_order.css" there are styles for ordered items table of orderpage.
+    </h4>
+    <h2>EVENT HANDLERS USAGE:</h2>
+    <h3>In homepage_javascipt.js:</h3>
+    <h4>In HTML: random_pick_promo_text() function in 4th line is called when the page is loaded (onload method in 17th
+        line of home.html) using the Event Handler</h4>
+    <h4>IN JS: in the 12th line event listener to play a video on load</h4>
+    <h4>In HTML: switch_video() function in 18th line is called when the video is ended (onended method in 65th line of
+        home.html) using the Event Handler</h4>
+    <h4>In JS: check_form() function in 37th line is called with the submit method using the Event Listener in 33th
+        line.</h4>
+    <h3>In orderpage_javascript.js:</h3>
+    <h4>In HTML: show_catalogue() function in 1st line is called when the page is loaded using the Event Handler in 16th
+        line using onload method.</h4>
+    <h4>In HTML: show_catalogue() function in 1st line is called when the certain h5 tags clicked in 34th,36th and 38th
+        lines in order.html with onclick Event Handler</h4>
+    <h4>In JS: Event Listener in 18th line is executed when add buttons are clicked(click method).</h4>
+    <h4>In HTML: Event Handler in 197th line of order.html is used to call the function delete_last_item() in 51st line
+        using the onclick method.</h4>
+</div>
+</body>
+
+</html>

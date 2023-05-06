@@ -1,0 +1,39 @@
+
+#booking_block {
+    margin: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+
+.booking_table {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+
+.booking_table input, select {
+    width: 20vw;
+    box-sizing: border-box;
+}
+
+.label {
+    text-align: left;
+    padding-right: 5rem;
+}
+
+
+.booking_inputs td {
+    padding-top: 3%;
+    padding-right: 1vw;
+}
+
+
+.buttons input {
+    width: 40%;
+    margin-bottom: 1%;
+}
+
+#check {
+    margin-right: 3%;
+}

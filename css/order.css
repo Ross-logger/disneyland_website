@@ -1,0 +1,46 @@
+@import url(order_related/table_order.css);
+@import url(order_related/menu_order.css);
+
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+
+#menu {
+    width: 75%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#ordered_items_block {
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+
+#ordered_items_block {
+    width: 22vw;
+    height: 30%;
+    margin: 1%;
+    font-size: 1.3vw;
+}
+
+
+.website_footer {
+    /*position: fixed;*/
+    bottom: 0;
+    height: 10%;
+    /*bottom: 5%;*/
+    border: 5px solid #25344A;
+    border-radius: 15px;
+}
+
+@media only screen and (max-height: 600px) {
+    .website_footer {
+        bottom: 0;
+        padding-left: 1%;
+    }
+}
+

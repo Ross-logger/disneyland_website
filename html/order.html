@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Iusuf Naumov">
+    <meta charset="UTF-8">
+    <meta name="description" content="Orderpage for user that contains reservation form for dinners, hotels, tickets.">
+    <meta name="keywords" content="reservation,dinners,hotels,tickets">
+    <link rel="stylesheet" href="../css/default.css" type="text/css" media="only screen">
+    <link rel="stylesheet" href="../css/order.css" type="text/css" media="only screen">
+    <link rel="stylesheet" href="../css/order_related/printOrder.css" type="text/css" media="only print">
+    <title>Orderpage</title>
+</head>
+
+<body onload="show_catalogue('ticket_label','menu_ticket');">
+
+<header>
+    <div class="company_info">
+        <div id="logo"><img src="../images/logo.png" alt="Logo of Disneyland in Hong Kong"></div>
+        <h1 id="website_title">
+            <span>D</span><span>i</span><span>s</span><span>n</span><span>e</span><span>y</span><span>L</span><span>a</span><span>n</span><span>d</span>
+        </h1>
+    </div>
+    <div class="welcome_message">
+        <h2>Welcome!</h2>
+    </div>
+</header>
+
+<main>
+    <div id="menu">
+        <h2>Menu</h2>
+        <div id="menu_content">
+            <h5 id="ticket_label" class="menu_label" onclick="show_catalogue('ticket_label','menu_ticket');">
+                Tickets</h5>
+            <h5 id="dining_label" class="menu_label" onclick="show_catalogue('dining_label','menu_dining');">
+                Dinings</h5>
+            <h5 id="hotel_label" class="menu_label" onclick="show_catalogue('hotel_label', 'menu_hotel');">
+                Hotels</h5>
+            <div id="menu_ticket" class="menu_items">
+                <form action="#" id="ticket1" class="form0">
+                    <div class="ticket">
+                        <img src="../images/ticket-1.jpeg" alt="1-Day Ticket" id="t1-img">
+                        <div class="ticket-info">
+                            <label for="t1-qty">1-Day Ticket</label>
+                            <div>
+                                <input name="t1-qty" type="number" id="t1-qty">
+                                <button type="button" id="t1" class="add_button">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <form action="#" id="ticket2" class="form0">
+                    <div class="ticket">
+                        <img src="../images/ticket-2.jpeg" alt="1-Day Ticket (Child)" id="t2-img">
+                        <div class="ticket-info">
+                            <label>1-Day Ticket (Child)</label>
+                            <div>
+                                <input name="t2-qty" type="number" id="t2-qty">
+                                <button type="button" id="t2" class="add_button">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <form action="#" id="ticket3" class="form0">
+                    <div class="ticket">
+                        <img src="../images/ticket-3.jpeg" alt="2-Day Ticket" id="t3-img">
+                        <div class="ticket-info">
+                            <label>2-Day Ticket</label>
+                            <div>
+                                <input name="t3-qty" type="number" id="t3-qty">
+                                <button type="button" id="t3" class="add_button">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
+            <div id="menu_dining" class="menu_items">
+                <form action="#" id="dining1" class="form0">
+                    <div class="dining">
+                        <img src="../images/dining-1.jpeg" alt="Explorer's Semi Buffet" id="d1-img">
+                        <div class="dining-info">
+                            <label>Explorer's Semi Buffet</label>
+                            <div class="input-group">
+                                <input name="d1-qty" type="number" id="d1-qty">
+                                <button type="button" id="d1" class="add_button">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <form action="#" id="dining2" class="form0">
+                    <div class="dining">
+                        <img src="../images/dining-2.jpeg" alt="3-in-1 Park Meal Voucher" id="d2-img">
+                        <div class="dining-info">
+                            <label>3-in-1 Park Meal Voucher</label>
+                            <div class="input-group">
+                                <input name="d2-qty" type="number" id="d2-qty">
+                                <button type="button" id="d2" class="add_button">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
+            <div id="menu_hotel" class="menu_items">
+                <form action="#" id="hotel1" class="form0">
+                    <div class="hotel">
+                        <img src="../images/hotel-1.jpeg" alt="Standard Room" id="h1-img">
+                        <div class="hotel-info">
+                            <label>Standard Room</label>
+                            <div>
+                                <input name="h1-qty" type="number" id="h1-qty">
+                                <button type="button" id="h1" class="add_button">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <form action="#" id="hotel2" class="form0">
+                    <div class="hotel">
+                        <img src="../images/hotel-2.jpeg" alt="Deluxe Room" id="h2-img">
+                        <div class="hotel-info">
+                            <label>Deluxe Room</label>
+                            <div>
+                                <input name="h2-qty" type="number" id="h2-qty">
+                                <button type="button" id="h2" class="add_button">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <form action="#" id="hotel3" class="form0">
+                    <div class="hotel">
+                        <img src="../images/hotel-3.jpeg" alt="Sea View Room" id="h3-img">
+                        <div class="hotel-info">
+                            <label>Sea View Room</label>
+                            <div>
+                                <input name="h3-qty" type="number" id="h3-qty">
+                                <button type="button" id="h3" class="add_button">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <form action="#" id="hotel4" class="form0">
+                    <div class="hotel">
+                        <img src="../images/hotel-4.jpeg" alt="Kingdom Club Room" id="h4-img">
+                        <div class="hotel-info">
+                            <label>Kingdom Club Room</label>
+                            <div>
+                                <input name="h4-qty" type="number" id="h4-qty">
+                                <button type="button" id="h4" class="add_button">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div id="ordered_items_block">
+        <div class="ordered_items_info">
+            <h2>Ordered Items</h2>
+            <h4> 5 Feb 2023 19:06</h4>
+        </div>
+
+        <table id="ordered_items_table">
+            <caption> Table number: 7<br>
+                Number of guests: 11
+            </caption>
+            <thead>
+            <tr>
+                <th class="description">Description</th>
+                <th class="qty">Qty</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot id="ordered_table_footer">
+            <tr>
+                <td class="total">Total</td>
+                <td class="qty">0</td>
+            </tr>
+            </tfoot>
+        </table>
+
+        <footer id="ordered_items_footer">
+            <a href="#" onclick="return delete_last_item();">undo</a>
+        </footer>
+    </div>
+
+</main>
+
+
+<footer class="website_footer">
+    <div>
+        <h2 id="copyright">@CityU 2023 – sources of images and text from official website of Hong Kong
+            Disneyland, Wikipedia and Courtesy of Icon pack by Icons8 – designed by
+            <a href="design.html">Iusuf.</a>
+        </h2>
+    </div>
+</footer>
+<script src="../javascript/orderpage_javascript.js"></script>
+</body>
+
+</html>

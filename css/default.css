@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+header {
+    width: 100%;
+    height: 15%;
+    padding-bottom: 1%;
+}
+
+
+#website_title:hover span {
+    display: inline-block;
+    animation: mover 1s linear infinite;
+    background-color: #CA4246;
+    background-image: linear-gradient(
+            45deg,
+            red 16.666%,
+            darkorange 16.666%,
+            orange 33.333%,
+            darksalmon 33.333%,
+            #F18F43 50%,
+            #8B9862 50%,
+            #8B9862 66.666%,
+            #a2a8d3 66.666%,
+            #113f67 83.333%,
+            rebeccapurple 83.333%);
+
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes mover {
+    0% {
+    }
+    50% {
+        transform: translateY(-35%);
+    }
+    100% {
+    }
+}
+
+#website_title span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+#website_title span:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+#website_title span:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+#website_title span:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+#website_title span:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+#website_title span:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+#website_title span:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+#website_title span:nth-child(7) {
+    animation-delay: 0.7s;
+}
+
+#website_title span:nth-child(8) {
+    animation-delay: 0.8s;
+}
+
+#website_title span:nth-child(9) {
+    animation-delay: 0.9s;
+}
+
+#website_title span:nth-child(10) {
+    animation-delay: 1s;
+}
+
+
+.company_info, .welcome_message {
+    border: 4px solid #364A60;
+    border-radius: 10px;
+}
+
+
+.company_info {
+    margin: 1%;
+    display: flex;
+    justify-content: center; /* centers horizontally */
+    align-items: center; /* centers vertically */
+    font-size: 1.7vw;
+}
+
+
+.welcome_message {
+    margin: 1% 1% -1% 1%;
+    position: static;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(#008CBA, #364A60);
+}
+
+.welcome_message h2 {
+    font-size: 2vw;
+    color: white;
+    text-align: center;
+    -webkit-animation: flicker 1s ease-in-out infinite alternate;
+    -moz-animation: flicker 1s ease-in-out infinite alternate;
+    animation: flicker 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes flicker {
+    from {
+        text-shadow: 0 0 10px cornflowerblue, 0 0 20px cornflowerblue, 0 0 30px deepskyblue, 0 0 40px deepskyblue, 0 0 50px deepskyblue, 0 0 60px deepskyblue, 0 0 70px deepskyblue;
+    }
+    to {
+        text-shadow: 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 50px white, 0 0 60px white, 0 0 70px white, 0 0 80px white;
+    }
+}
+
+
+#logo {
+    padding-right: 3%;
+}
+
+#logo:hover {
+    animation: logo_rotation 1.5s linear infinite;
+}
+
+@keyframes logo_rotation {
+    33% {
+        rotate: 13deg;
+    }
+    66% {
+        rotate: -13deg;
+    }
+}
+
+.website_footer {
+    height: 10%;
+    border: 5px solid #25344A;
+    border-radius: 15px;
+    padding-left: 1%;
+}
+
+.website_footer h2{
+    font-size: 1.5vw;
+}
+

@@ -1,0 +1,47 @@
+#ordered_items_info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ordered_items_info {
+    text-align: center;
+}
+
+
+#ordered_items_table {
+    width: 100%;
+    background-color: #6C96AA;
+}
+
+
+#ordered_items_table .description, .total {
+    font-size: 1.4vw;
+    width: 70%;
+    text-align: left;
+
+}
+
+#ordered_items_table .qty {
+    font-size: 1.4vw;
+    width: 30%;
+    text-align: right;
+}
+#ordered_items_table .item_qty{
+    text-align: right;
+}
+
+#ordered_items_footer {
+    text-align: center;
+}
+
+#ordered_items_footer a {
+    text-decoration: none;
+    color: #0B1723;
+
+}
+
+footer {
+    clear: both;
+}
